@@ -20,5 +20,8 @@ describe('fizzbuzz', function() {
 			assert.equal('1 2 fizz 4 buzz fizz 7 8 fizz buzz 11 fizz 13 14 fizzbuzz 16 17 fizz 19 buzz ', fizzbuzz.createMessage(1, 20));
 		});
 		
+		it('should return the expected string for the numbers 21 through 25', function() {
+			assert.equal('fizz 22 23 fizz buzz ', fizzbuzz.createMessage(21, 25));
+		});
 	});
 })
