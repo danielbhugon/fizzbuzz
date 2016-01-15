@@ -11,3 +11,10 @@ and then call the message function exported by that object, with the start and e
 ```Javascript
 console.log(fizzbuzz.createMessage(1,20));
 ```
+
+## Unit tests
+Are specified in fizzbuzz_test.js under the test subfolder. Assuming mocha is installed, these can be run as
+
+```
+mocha test
+```
