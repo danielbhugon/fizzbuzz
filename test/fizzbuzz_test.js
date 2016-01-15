@@ -3,7 +3,7 @@ var fizzbuzz = require('../lib/fizzbuzz.js');
 
 describe('fizzbuzz', function() {
 	
-	describe('#translate()', function () {
+	describe('#translate(number)', function () {
 		
 		var testCases = ['fizzbuzz', '1', '2', 'fizz', '4', 'buzz', 'fizz', '7', '8', 'fizz', 'buzz', '11', 'fizz', '13', '14', 'fizzbuzz', '16'];
 		
@@ -12,7 +12,13 @@ describe('fizzbuzz', function() {
 				assert.equal(expected, fizzbuzz.translate(index));
 			});
 		});
+	});
+	
+	describe('#message(from, to)', function() {
 		
+		it('should return the expected string for the first 20 numbers', function() {
+			assert.equal('1 2 fizz 4 buzz fizz 7 8 fizz buzz 11 fizz 13 14 fizzbuzz 16 17 fizz 19 buzz ', fizzbuzz.createMessage(1, 20));
+		});
 		
 	});
 })
