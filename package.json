@@ -1,0 +1,9 @@
+{
+  "name"        : "fizzBuzz",
+  "version"     : "0.0.1",
+  "description" : "FizzBuzz - coding exercise,
+  "main"        : "index.js",
+  "author"      : "Daniel Bhugon",
+  "dependencies": {
+  }
+}
